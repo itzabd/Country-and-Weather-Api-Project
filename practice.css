@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(189, 193, 196);
+}
+.btn {
+    background-color: bisque;
+    border: 2px solid #4e4e4c;
+    color: black;
+}
+
+.btn:hover {
+    background-color: black; /* Opposite of bisque */
+    color: white; /* A contrasting color for the text */
+    border: 2px solid bisque; /* Opposite of black */
+}
+
+.navbar-brand {
+    
+    display: block; 
+    text-align: center; 
+    width: 100%; 
+    margin: 0 auto; 
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.container {
+    padding-top: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px; /* Prevents overlap with footer */
+}
+
+#countryResults {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px; /* Adds spacing from the footer */
+}
+
+.card {
+    background-color: rgb(173, 173, 173);
+    width: 18rem;
+    border: 1px solid #4e4e4c;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-height: 300px; /* Ensures a minimum height */
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Adds space between the image and the body */
+    margin-top: 10px;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    position: static;
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adds space above the footer */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.weather-details .alert-info {
+    background-color: #ffefd5; /* Pale goldenrod background */
+    color: #333; /* Darker text for contrast */
+    border-color: #4e4e4c; /* Light goldenrod border */
+}
